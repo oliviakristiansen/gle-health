@@ -5968,6 +5968,12 @@ ol ul {
   margin-top: -100px !important;
 }
 
+.contact-box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 @media only screen and (max-width: 479px) {
   .small-margin-pricing {
     margin-bottom: 25px !important;
@@ -15701,8 +15707,12 @@ span.sr-only {
 /*---------------------------
     Pricing Area Styles 
 -----------------------------*/
+.navigation-wrapper-parent{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .navigation-wrapper {
-  margin: 10px 0 0 200px;
   max-width: 70%;
   box-shadow: var(--shadow-1);
 }
@@ -16303,13 +16313,23 @@ span.sr-only {
     height: auto;
   }
 }
+.contact-wrapper{
+  display: flex;
+  justify-content: space-around;
+}
+.contact-wrapper .description{
+  margin-top:20px;
+}
 .contact-about-area .thumbnail {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 28px;
   overflow: hidden;
   border-radius: 10px;
 }
 .contact-about-area .thumbnail img {
-  width: 100%;
+  width: 25%;
   height: auto;
   transition: var(--transition);
 }
