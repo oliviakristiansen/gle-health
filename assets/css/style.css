@@ -488,7 +488,7 @@ ul li {
 }
 ul li a {
   text-decoration: none;
-  color: var(--color-gray);
+  color: var(--color-white);
 }
 ul li a:hover {
   color: var(--color-primary);
@@ -7645,6 +7645,7 @@ textarea:-ms-input-placeholder {
 }
 
 .liststyle {
+  display: block;
   padding: 0;
   list-style: none;
 }
@@ -12666,7 +12667,7 @@ figcaption {
   }
 }
 .slide .content .inner {
-  margin-bottom: 142px;
+  margin-bottom: 70px;
 }
 @media only screen and (max-width: 1199px) {
   .slide .content .inner {
@@ -13014,9 +13015,9 @@ figcaption {
 .slide.slider-style-2 .content {
   margin-top: 0;
 }
-.slide.slider-style-2 .content .inner {
+/* .slide.slider-style-2 .content .inner {
   margin-bottom: 120px;
-}
+} */
 @media only screen and (max-width: 767px) {
   .slide.slider-style-2 .content .inner .description {
     padding-right: 0;
@@ -15701,17 +15702,20 @@ span.sr-only {
     Pricing Area Styles 
 -----------------------------*/
 .navigation-wrapper {
-  margin-left: 10px;
+  margin: 10px 0 0 200px;
+  max-width: 70%;
   box-shadow: var(--shadow-1);
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .navigation-wrapper {
     margin: 0;
+    max-width: 100%;
   }
 }
 @media only screen and (max-width: 767px) {
   .navigation-wrapper {
     margin: 0;
+    max-width: 100%;
   }
 }
 .navigation-wrapper ul {
@@ -15810,11 +15814,23 @@ span.sr-only {
   }
 }
 
-.rn-pricing .pricing-header {
+.prices {
   display: flex;
+  justify-content: space-evenly;
+}
+.pricing-body .check-wrapper .left-area .subtitle, .pricing-body .check-wrapper .right-area .subtitle{
+  color: var(--color-subtitle);
+  margin-bottom: 10px;
+}
+.rn-pricing{
+  padding-top: 10px !important;
+}
+
+.rn-pricing .pricing-header {
+  /* display: flex; */
   margin-top: 55px;
-  justify-content: space-between;
-  align-items: center;
+  /* justify-content: space-between; */
+  /* align-items: center; */
   margin-bottom: 40px;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -15837,7 +15853,7 @@ span.sr-only {
 }
 .rn-pricing .pricing-header .header-left h2.title {
   font-size: 27px;
-  color: var(--color-lightn);
+  color: var(--color-white);
   margin-bottom: 9px;
 }
 @media only screen and (max-width: 575px) {
@@ -15849,7 +15865,7 @@ span.sr-only {
   color: #7c838e;
   font-family: var(--font-secondary);
 }
-.rn-pricing .pricing-header .header-right span {
+.rn-pricing .prices .header-right span {
   color: var(--color-primary);
   font-size: 30px;
   font-weight: 600;
@@ -15888,8 +15904,7 @@ span.sr-only {
 }
 .rn-pricing .pricing-body .check-wrapper .left-area {
   margin-bottom: 30px;
-}
-.rn-pricing .pricing-body .check-wrapper .check {
+}.rn-pricing .pricing-body .check-wrapper .check {
   margin-bottom: 15px;
 }
 .rn-pricing .pricing-body .check-wrapper .check svg {
