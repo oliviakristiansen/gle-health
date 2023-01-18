@@ -13874,6 +13874,22 @@ figcaption {
 /*---------------------------
     Service Area Styles 
 -----------------------------*/
+.bio{
+  margin-top:40px;
+  text-align: left;
+  padding: 35px 50px 35px 50px;
+  transition: 0.5s all ease-in-out;
+  position: relative;
+  border-radius: 10px;
+  background: var(--background-color-1);
+  box-shadow: var(--shadow-1);
+  position: relative;
+  z-index: 1;
+  height: 100%;
+}
+.bio .about-name{
+  color: var(--color-primary);
+}
 .rn-service {
   text-align: left;
   padding: 35px 50px 35px 50px;
