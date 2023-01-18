@@ -7650,6 +7650,9 @@ textarea:-ms-input-placeholder {
   height: 100%;
 }
 
+.social-share {
+  display: block !important;
+}
 .liststyle {
   display: block !important;
   padding: 0;
