@@ -7651,7 +7651,7 @@ textarea:-ms-input-placeholder {
 }
 
 .liststyle {
-  display: block;
+  display: block !important;
   padding: 0;
   list-style: none;
 }
